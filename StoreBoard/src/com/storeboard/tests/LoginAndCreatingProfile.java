@@ -99,7 +99,6 @@ public class LoginAndCreatingProfile extends BaseTest
 		//entering the managers email address by calling the method present in ManageProfilePage and passing arguments from filelibrary which contains generic reuasable methods to read data 
 		//from excel sheet
 		mp.setManageEmail(flib.getCellData(MANAGE_EXCEL_PATH, "Sheet1", 1, 15));
-		//hours
 		//entering the specialized in by calling the method present in ManageProfilePage and passing arguments from filelibrary which contains generic reuasable methods to read data 
 		//from excel sheet
 		mp.setSpecializedIn(flib.getCellData(MANAGE_EXCEL_PATH, "Sheet1", 1, 16));
