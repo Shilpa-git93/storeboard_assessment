@@ -51,13 +51,13 @@ public class SignUpTest extends BaseTest
 		wlib.verifyAssert(wlib.getPageTitle(), expectedHomeTitle, "login page is dispalyed");
 		}
 	/**
-	 * using more customized way...just caling the methodname by passing the parameters
+	 * using more customized way...just caling the signUp method by passing the parameters
 	 * @throws Throwable 
 	 * @throws EncryptedDocumentException 
 	 */
 	
 	@Test
-	public void SignIn1() throws EncryptedDocumentException, Throwable
+	public void signIn1() throws EncryptedDocumentException, Throwable
 	{
 		sp.signUp(flib.getCellData(EXCEL_PATH, "Sheet1", 0, 0),flib.getCellData(EXCEL_PATH, "Sheet1",0, 1),flib.getCellData(EXCEL_PATH, "Sheet1", 0, 2), 
 				flib.getCellData(EXCEL_PATH, "Sheet1", 0, 3),flib.getCellData(EXCEL_PATH, "Sheet1", 0, 4));

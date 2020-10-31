@@ -8,7 +8,13 @@ import java.util.Properties;
 import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
-
+/**
+ * This class contains generic reusable methods to read the data from the excel sheet(huge set of data to test the feature for both
+ *  positive and negative values) and also from the property file(contains most common data like url,username etc)[concept of data
+ *  driven framework]
+ * @author Shilpa
+ *
+ */
 public class FileLibrary 
 {
 	public String getKeyPropValue(String propath,String key) throws Throwable

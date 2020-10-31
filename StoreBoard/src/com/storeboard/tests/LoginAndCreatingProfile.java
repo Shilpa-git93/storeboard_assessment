@@ -33,11 +33,7 @@ public class LoginAndCreatingProfile extends BaseTest
 		String expectedTitle=driver.getTitle();
 		wlib.verifyAssert(driver.getTitle(), expectedTitle, "premiumpackage page should be displayed");
 	}
-	/**
-	 * @throws Throwable 
-	 * @throws EncryptedDocumentException 
-	 * 
-	 */
+	
 	@Test
 	public void creatingProfile() throws EncryptedDocumentException, Throwable
 	{

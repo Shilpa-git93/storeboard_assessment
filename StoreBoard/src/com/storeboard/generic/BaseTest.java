@@ -10,14 +10,20 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
-
+/**
+ * There are few actions which has to be repeated in every testscripts like opening the browser and closing browser so, instead of 
+ * repeating these steps in every test scripts,I created a class known as BaseTest(which extends in every test class) which contains method related to opening the browser 
+ * and closing the browser and by using testNg annotations these methods are automatically called to every test class.[used the inheritance concept of java]
+ * @author Shilpa
+ *
+ */
 public class BaseTest implements IAutoConsts
 {
 	public static WebDriver driver;
 	FileLibrary flib;
 	WebDriverCommonLibrary wlib;
 	
-	@BeforeClass
+	@BeforeMethod
 	public void openBrowser() throws Throwable
 	{
 		flib=new FileLibrary();
@@ -44,29 +50,12 @@ public class BaseTest implements IAutoConsts
 		wlib.verifyAssert(driver.getTitle(), expectedWelcomePageTitle,"welcomepage is displayed");
 	}
 	
-//	@BeforeMethod(enabled=false)
-//	public void loginTo() throws Throwable 
-//	{
-//		flib=new FileLibrary();
-//		wlib=new WebDriverCommonLibrary();
-//		
-//	}
-//
-//	
-//@AfterMethod
-//public void logoutFromApp() throws Throwable
-//{
-//	flib=new FileLibrary();
-//	wlib=new WebDriverCommonLibrary();
-//	
-//	
-//}
-//
-//@AfterClass
-//public void closeBrowser()
-//{
-//	driver.quit();
-//}
+
+@AfterMethod
+public void closeBrowser()
+{
+	driver.quit();
+}
 }
 
 

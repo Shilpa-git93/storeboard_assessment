@@ -9,7 +9,12 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.asserts.SoftAssert;
-
+/**This class contains the generic reusable methods of selenium webdriver interface which has to be called in the test class 
+ * whenever required so the test class is light weight and reduces the number of lines in the code.
+ * 
+ * @author Shilpa
+ *
+ */
 
 public class WebDriverCommonLibrary extends BaseTest
 {

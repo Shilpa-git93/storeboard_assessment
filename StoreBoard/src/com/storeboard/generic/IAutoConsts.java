@@ -1,5 +1,9 @@
 package com.storeboard.generic;
-
+/**
+ * In interface by default all the variables are static final so to denote below values are constant I created interface
+ * @author Shilpa
+ *
+ */
 public interface IAutoConsts 
 {
 	String CHROME_KEY="webdriver.chrome.driver";

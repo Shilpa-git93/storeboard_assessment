@@ -7,7 +7,13 @@ import org.openqa.selenium.support.FindBy;
 
 import com.storeboard.generic.FileLibrary;
 import com.storeboard.generic.WebDriverCommonLibrary;
-
+/**
+ * This POM class contains the address of the webelement present on the manage profile page and contains address returning method and
+ * action performing method which has to be called in the  test classes whenever required[used the concept of encapsulation and 
+ * abstract class ]
+ * @author Shilpa
+ *
+ */
 public class ManageProfilePage
 {
 	FileLibrary flib=new FileLibrary();

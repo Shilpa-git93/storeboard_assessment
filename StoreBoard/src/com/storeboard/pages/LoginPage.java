@@ -1,7 +1,13 @@
 package com.storeboard.pages;import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
+/**
+ * This POM class contains the address of the webelement present on the Login page and contains address returning method and
+ * action performing method which has to be called in the  test classes whenever required[used the concept of encapsulation and 
+ * abstract class ]
+ * @author Shilpa
+ *
+ */
 public class LoginPage 
 {
 	@FindBy(className="log-in-btn") private WebElement loginBtn;
